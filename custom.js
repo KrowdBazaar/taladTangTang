@@ -1,6 +1,4 @@
-
-<script>
-  window.fbMessengerPlugins = window.fbMessengerPlugins || {
+window.fbMessengerPlugins = window.fbMessengerPlugins || {
         init: function () {
           FB.init({
             appId            : '1678638095724206',
@@ -24,6 +22,6 @@
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
       }, 0);
-</script>
+
       
   

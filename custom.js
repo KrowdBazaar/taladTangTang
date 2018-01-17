@@ -34,5 +34,19 @@ setTimeout(function () {
 }(document, 'script', 'facebook-jssdk'));
 }, 0);
 
+// Ecwid.OnPageLoaded.add(function(page) {
+//   widgets = Ecwid.getInitializedWidgets();
+//   // if storefront widget is present on this page
+//   for (i = 0; i < widgets.length ; i++) {
+//     if (widgets[i] == "ProductBrowser") {
+//       if ('CART' == page.type) {
+//         Ecwid.Cart.calculateTotal(function(order) {
+//           checkSubtotal(order);
+//         });
+//       }
+//     }
+//   }
+// });
+
       
     

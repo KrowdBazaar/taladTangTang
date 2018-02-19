@@ -35,7 +35,7 @@ setTimeout(function () {
 }(document, 'script', 'facebook-jssdk'));
 }, 0);
 
-$("a.grid-product__image").click(function(e) {
+$("a").click(function(e) {
 if($('.ecwid-productBrowser-price').text() == free_product_match)console.log("Is Free Product");
 });  
 // Ecwid.OnPageLoaded.add(function(page) {

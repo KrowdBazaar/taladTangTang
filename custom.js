@@ -1,3 +1,4 @@
+console.log("Link PassedClicked");
 var newDiv = document.createElement("div");
 var chatClass = document.createAttribute("class");
 var page_id = document.createAttribute("page_id");
@@ -39,7 +40,7 @@ $(".grid-product__image a").click(function(e) {
 if($('.ecwid-productBrowser-price').text() == free_product_match)console.log("Is Free Product");
   console.log("Link Clicked");
 });  
-console.log("Link PassedClicked");
+
 // Ecwid.OnPageLoaded.add(function(page) {
 //   widgets = Ecwid.getInitializedWidgets();
 //   // if storefront widget is present on this page

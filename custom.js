@@ -36,10 +36,11 @@ setTimeout(function () {
 }(document, 'script', 'facebook-jssdk'));
 }, 0);
 
-$(".grid-product__image a").click(function(e) {
-if($('.ecwid-productBrowser-price').text() == free_product_match)console.log("Is Free Product");
+$(".grid-product__image a").on( "click", function() {
+  console.log( $( this ).text() );
+  if($('.ecwid-productBrowser-price').text() == free_product_match)console.log("Is Free Product");
   console.log("Link Clicked");
-});  
+});
 
 // Ecwid.OnPageLoaded.add(function(page) {
 //   widgets = Ecwid.getInitializedWidgets();

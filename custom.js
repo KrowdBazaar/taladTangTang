@@ -34,6 +34,9 @@ setTimeout(function () {
 }(document, 'script', 'facebook-jssdk'));
 }, 0);
 
+$(document).ready(function(){
+  console.log($('li.active').attr('class'));
+});
 // Ecwid.OnPageLoaded.add(function(page) {
 //   widgets = Ecwid.getInitializedWidgets();
 //   // if storefront widget is present on this page

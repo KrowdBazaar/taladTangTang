@@ -37,7 +37,9 @@ setTimeout(function () {
 
 $("a").click(function(e) {
 if($('.ecwid-productBrowser-price').text() == free_product_match)console.log("Is Free Product");
+  console.log("Link Clicked");
 });  
+console.log("Link PassedClicked");
 // Ecwid.OnPageLoaded.add(function(page) {
 //   widgets = Ecwid.getInitializedWidgets();
 //   // if storefront widget is present on this page

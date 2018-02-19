@@ -35,7 +35,7 @@ setTimeout(function () {
 }(document, 'script', 'facebook-jssdk'));
 }, 0);
 
-$("a").click(function(e) {
+$(".grid-product__image a").click(function(e) {
 if($('.ecwid-productBrowser-price').text() == free_product_match)console.log("Is Free Product");
   console.log("Link Clicked");
 });  

@@ -36,11 +36,16 @@ setTimeout(function () {
 }(document, 'script', 'facebook-jssdk'));
 }, 0);
 
-$(".grid-product__image a").on( "click", function() {
-  console.log( $( this ).text() );
-  if($('.ecwid-productBrowser-price').text() == free_product_match)console.log("Is Free Product");
-  console.log("Link Clicked");
-});
+Ecwid.OnPageLoaded.add(function(page){
+  console.log("Current page is of type: " + page.type);
+  console.log($('.ecwid-productBrowser-price').text());
+})
+
+// $(".grid-product__image a").on( "click", function() {
+//   console.log( $( this ).text());
+//   if($('.ecwid-productBrowser-price').text() == free_product_match)console.log("Is Free Product");
+//   console.log("Link Clicked");
+// });
 
 // Ecwid.OnPageLoaded.add(function(page) {
 //   widgets = Ecwid.getInitializedWidgets();

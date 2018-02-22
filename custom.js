@@ -1,4 +1,9 @@
-console.log("Link PassedClicked");
+Ecwid.OnPageLoaded.add(function(page){
+  console.log("Current page is of type: " + page.type);
+  console.log($('.ecwid-productBrowser-price').text());
+});
+console.log($('.ecwid-productBrowser-price').text());
+
 var newDiv = document.createElement("div");
 var chatClass = document.createAttribute("class");
 var page_id = document.createAttribute("page_id");
@@ -36,10 +41,7 @@ setTimeout(function () {
 }(document, 'script', 'facebook-jssdk'));
 }, 0);
 
-Ecwid.OnPageLoaded.add(function(page){
-  console.log("Current page is of type: " + page.type);
-  console.log($('.ecwid-productBrowser-price').text());
-})
+
 
 // $(".grid-product__image a").on( "click", function() {
 //   console.log( $( this ).text());

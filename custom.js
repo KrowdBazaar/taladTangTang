@@ -22,8 +22,8 @@ Ecwid.OnPageLoaded.add(function(page){
         console.log( index + ": " + $( this ).text() );
          if($( this ).text() == free_product_match){
          console.log("Is Free Product on Search Page");
-//          $('.grid-product__price-amount').next().hide();
-         $( this ).next().hide();
+         $( this ).hide();
+         $( this ).parent().next().text(' View  ➲');
       }
       });
    }

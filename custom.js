@@ -6,17 +6,19 @@ var free_product_match = "฿0.00";
 
 //FREE PRODUCT DISPLAY WITHOUT 
 Ecwid.OnPageLoaded.add(function(page){
-   $('.ecwid-btn--addToBag').show();    
-    $('.ecwid-productBrowser-details-qtyPanel').show();
-    $('.ecwid-productBrowser-sku').show();
-    $('.ecwid-productBrowser-price').show();
-  if($('.ecwid-productBrowser-price').text() == free_product_match){
-    console.log("Is Free Product");
-    $('.ecwid-btn--addToBag').hide();    
-    $('.ecwid-productBrowser-details-qtyPanel').hide();
-    $('.ecwid-productBrowser-sku').hide();
-    $('.ecwid-productBrowser-price').hide();
-  }
+   if(page.type=='PRODUCT'){
+      $('.ecwid-btn--addToBag').show();    
+      $('.ecwid-productBrowser-details-qtyPanel').show();
+      $('.ecwid-productBrowser-sku').show();
+      $('.ecwid-productBrowser-price').show();
+      if($('.ecwid-productBrowser-price').text() == free_product_match){
+         console.log("Is Free Product");
+         $('.ecwid-btn--addToBag').hide();    
+         $('.ecwid-productBrowser-details-qtyPanel').hide();
+         $('.ecwid-productBrowser-sku').hide();
+         $('.ecwid-productBrowser-price').hide();
+      }
+   }
 });
 
 chatClass.value = "fb-customerchat";

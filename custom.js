@@ -23,7 +23,7 @@ Ecwid.OnPageLoaded.add(function(page){
          if($( this ).text() == free_product_match){
          console.log("Is Free Product on Search Page");
          $( this ).hide();
-         $( this ).parent().next().text(' View  ➲').addClass('kBazaarViewBlock');
+         $( this ).parent().next().text(' taladTangTang  ➲').addClass('kBazaarViewBlock');
       }
       });
    }

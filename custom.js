@@ -16,6 +16,7 @@ Ecwid.OnPageLoaded.add(function(page){
          $('.ecwid-productBrowser-price').hide();
       }
    }
+   console.log(page.type);
    if(page.type=='SEARCH'){
 //       $('.grid-product__price-amount').show();    
       if($('.grid-product__price-amount').text() == free_product_match){

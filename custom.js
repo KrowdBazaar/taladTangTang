@@ -16,7 +16,7 @@ Ecwid.OnPageLoaded.add(function(page){
          $('.ecwid-productBrowser-price').hide();
       }
    }
-   console.log(page.type);
+   console.log("Current page is of type: " + page.type);
    if(page.type=='SEARCH'){
 //       $('.grid-product__price-amount').show();    
       if($('.grid-product__price-amount').text() == free_product_match){
@@ -58,28 +58,3 @@ setTimeout(function () {
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 }, 0);
-
-
-
-// $(".grid-product__image a").on( "click", function() {
-//   console.log( $( this ).text());
-//   if($('.ecwid-productBrowser-price').text() == free_product_match)console.log("Is Free Product");
-//   console.log("Link Clicked");
-// });
-
-// Ecwid.OnPageLoaded.add(function(page) {
-//   widgets = Ecwid.getInitializedWidgets();
-//   // if storefront widget is present on this page
-//   for (i = 0; i < widgets.length ; i++) {
-//     if (widgets[i] == "ProductBrowser") {
-//       if ('CART' == page.type) {
-//         Ecwid.Cart.calculateTotal(function(order) {
-//           checkSubtotal(order);
-//         });
-//       }
-//     }
-//   }
-// });
-
-      
-    

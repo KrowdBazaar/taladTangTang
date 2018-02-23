@@ -18,12 +18,14 @@ Ecwid.OnPageLoaded.add(function(page){
    }
    console.log("Current page is of type: " + page.type);
    if(page.type=='SEARCH'){
-//       $('.grid-product__price-amount').show();    
-      if($('.grid-product__price-amount').text() == free_product_match){
+      $( ".grid-product__price-amount" ).each(function( index ) {
+        console.log( index + ": " + $( this ).text() );
+         if($( this ).text() == free_product_match){
          console.log("Is Free Product on Search Page");
-//          $('.grid-product__button grid-product__buy-now').hide();    
-         $('.grid-product__price-amount').next().hide();
+//          $('.grid-product__price-amount').next().hide();
+         $( this ).next().hide();
       }
+      });
    }
 });
 
